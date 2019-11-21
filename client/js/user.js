@@ -7,8 +7,6 @@ User.get = function (username, cb) {
             return
         }
         for (var i = 0; i < 1; i++) {
-            console.log( result[i])
-            result[i].privatekey = "6a8ZCRXaKixGUC1yZGLhuhkUta8cv2EysXuh9aqK2pgw";
             User.upsert({ _id: result[i]._id }, result[i])
         }
         cb(null)
@@ -22,8 +20,6 @@ User.refresh = function (username, cb) {
             return
         }
         for (var i = 0; i < 1; i++) {
-            console.log( result[i])
-            result[i].privatekey = "6a8ZCRXaKixGUC1yZGLhuhkUta8cv2EysXuh9aqK2pgw";
             User.upsert({ _id: result[i]._id }, result[i])
         }
         cb(null)
