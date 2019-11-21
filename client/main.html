@@ -1,0 +1,33 @@
+<head>
+  <title>teelkee</title>
+  <link rel="shortcut icon" type="image/png" href="./images/teelkee.png">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="keywords" content="teelkee, decentralized, blockchain">
+  <link rel="canonical" href="https://teelkee.com" />
+  <meta itemprop="name" content="https://teelkee.com">
+  <meta itemprop="description" content="https://teelkee.com.">
+  <meta itemprop="image" content="https://teelkee.com">
+  <meta property="og:url" content="https://teelkee.com">
+  <meta property="og:image" content="https://teelkee.com">
+  <meta property="og:description" content="https://teelkee.com.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="https://teelkee.com."
+  />
+</head>
+
+<body>
+
+</body>
+
+<template name="mainlayout">
+  {{>sidebar}}
+  <div class="pusher">
+    {{> Template.dynamic template=top}} 
+    <article>
+      {{> Template.dynamic template=main}}
+    </article>
+  </div>
+  {{> Template.dynamic template=bottom}}
+  {{> Template.dynamic template=footer}}
+</template>

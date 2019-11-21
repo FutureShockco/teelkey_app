@@ -1,0 +1,33 @@
+<template name="top">
+    <div class="ui inverted vertical masthead center aligned segment main">
+        <div class="ui container">
+            <div class="ui large inverted menu transparent">
+                <!-- <a class="toc item">
+                    <i class="sidebar icon"></i>
+                </a> 
+                <img class="ui small image" src="./images/logo.png"/>-->
+                <a id="home" class="item">Home</a>
+                <a class="item" href="/token">Token & Assets</a>
+                <a class="item" href="/explorer">Explorer</a>
+                <a class="item" href="/wallet">Wallet</a>
+                <a class="item" href="/dapps">dApps</a>
+                <a class="item" href="/resources">Resources</a>
+                <a class="item" href="/about">About</a>
+                {{#if user}}
+                <div class="right item">
+                        V {{user.bw.v}} - T {{user.bw.t}}
+                    <img class="ui mini image" src="https://steemitimages.com/u/{{user.name}}/avatar">
+                    <a id="profile" href="/profile" class="ui inverted button mr1">
+                        {{user.name}}</a>
+                    <a id="logout" class="ui inverted icon button"><i class="sign out icon"></i></a>
+                </div>
+                {{else}}
+                <div class="right item">
+                    <a id="login" class="ui inverted button mr1">Log in</a>
+                    <a id="singup" class="ui inverted button">Sign Up</a>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>
